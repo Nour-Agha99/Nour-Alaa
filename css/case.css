@@ -1,0 +1,462 @@
+/* start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');/*font-family: 'Satisfy', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');/*font-family: 'Lobster', cursive;*/
+:root{
+    --min:#666eff;
+    --zer:rgb(64, 64, 255);
+    --fir:#2A0944;
+    --sec:#3FA796;
+    --thd:#FEC260;
+    --for:#A10035;
+    --w:white;
+    --n:rgba(255, 255, 255, 0);
+    --b:rgba(0,0,0);
+    --hb: #3a3a3a;
+}
+* {
+-webkit-box-sizing: border-box ;
+-moz-box-sizing: border-box ;
+box-sizing: border-box ;
+}
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color:var(--hb);
+}
+/* end Global Rules  */
+header {
+    background-color: var(--for);
+    position: fixed;
+    width: 100%;
+
+}
+header .home{
+    display: flex;
+    justify-content: space-between;
+}
+.container,.home {
+    /* write this width for testing becase we have it in media query  */
+    /* width: 600px; */
+    margin: auto;
+    max-width: 900px;
+    padding:15px;
+}
+header .home img {
+    max-width: 80px;
+    
+}
+header .fa-solid ul::before {
+    content: "";
+    position: fixed;
+    margin-block-start: -1.6em;
+    margin-inline-start: 5em;
+    background-color: var(--n);
+    width: 2px;
+    height: 20px;
+    border: 13px solid transparent;
+    border-bottom-color: var(--thd);;
+
+}
+.home span {
+    color: var(--min);;
+    font-size: xx-large;
+}
+header .fa-list-ul:hover>ul {
+   display: block;
+}
+header span ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    min-width: 180px;
+    margin-block-start: 0.6em;
+    margin-inline-start: -149px;
+}
+header span ul li a {
+    display: block;
+    color: var(--zer);
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+    font-size: initial;
+    background-color:var(--thd);
+    border-bottom: 1px var(--fir) solid;
+    letter-spacing: 1px;
+}
+header span ul li:first-child a {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+header span ul li:last-child a {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 8px 10px -7px var(--w);
+}
+.back-header {
+    height: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-header h3 {
+    text-align: center;
+    color: var(--zer);
+    font-size: xxx-large;
+    margin-bottom: 0;
+}
+.back-header p {
+    text-align: center;
+    font-size: x-large;
+    max-width: 330px;
+    color: var(--sec);
+}
+.first-page{
+    background-image: url(../image/nice.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second-page{
+    padding-top: 20px;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 44px;
+    background-color: var(--thd);
+    padding-top: 1px;
+    border-radius: 10px;
+}
+ .box h3 {
+    color: var(--zer);
+    padding-top: 10px;
+    margin: 0;
+    font-size: x-large;
+    text-align: center;
+}
+ .box p {
+    color: var(--w);
+    text-align: center;
+    font-size: medium;
+    max-width: 500px;
+    padding: 28px;
+    margin: 0;
+}
+.second-icons{
+    color: var(--for);
+    font-size: xxx-large;
+}
+.gro {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(30px,1fr));
+
+}
+.Servises {
+    padding-top: 3vh;
+}
+.Servises .ser{
+    position: relative;
+    text-align: center;
+    font-size: 90px;
+    color: #a4b3c1;
+    padding: 25px;
+    z-index: -1;
+}
+.Servises .par{
+        color:var(--thd);
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: -55px;
+}
+.idea-photo {
+    background-color: var(--for);
+    position: relative;
+    left: 10px;
+    top: 100px;
+    width: 185px;
+    height: 185px;
+    border-radius: 6px;
+}
+.idea-photo::after {
+    content: "";
+    position: relative;
+    left: 122px;
+    top: 83px;
+    padding: 114px 50px;
+    background-color: var(--sec);
+    border-radius: 6px;
+    z-index: -1;
+}
+
+#Portfilo{    padding-top: 4vh;
+}
+
+.portfolio{
+     display: grid;
+     grid-template-columns: repeat(3,minmax(200px,1fr));
+     padding-top: 100px;
+     padding-bottom: 100px;
+}
+.img1{
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 135px;
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.portfolio .por1{
+    background-image: url(../image/por1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio .por2{
+    background-image: url(../image/por2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio .por3{
+    background-image: url(../image/por3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .por h3{
+    font-size: large;
+    padding: 10px;
+    color:var(--zer);
+}
+.container .por p{
+    font-size: 10px;
+    padding-bottom: 15px;
+    color:var(--w);
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.container .por h3,.container .por p{
+    text-align: center;
+    margin:0 10px;
+    background-color:var(--thd);
+
+}
+.container.about{
+        padding-top: 140px;
+    padding-bottom: 200px;
+}
+h2 {
+    color:var(--for);
+}
+.gmail{
+    color: var(--thd);
+}
+.gmail::after{
+    content: " ";
+    background-color:var(--sec);
+    padding: 0px 140px;
+    margin-left: -280px;
+    position: relative;
+    top: 11px;
+    right: 3px;
+    width: 10px;
+    z-index: -1;
+    margin-bottom: 25px;
+}
+.container .end{
+    color: var(--zer);
+}
+.copy{
+    background-color: var(--thd);
+    padding: 35px;
+    color: var(--w);
+    text-align: center;
+}
+.copy i{
+   color: var(--fir);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* mobil  */
+@media (max-width: 767px) {
+    .container {
+        max-width: auto;
+        margin: 0.2%;
+        padding: 5px;
+    }
+    
+    .header {
+        max-width: auto;
+        margin: 0.2%;
+        padding: 5px;
+    }
+    .back-header p    {
+        text-align: center;
+    font-size: x-small;
+    max-width: 200px;
+    }
+    .back-header h3   {
+        color: #008fff;
+        font-size: x-large;
+    }  
+     .box h3 {
+        text-align: center;
+        color: #fbfbfb;
+        font-size: large;
+    }
+     .box p {
+        text-align: center;
+        font-size: small;
+        max-width: 250px;
+        padding: 7px;
+    }
+    .second-page {
+     height:65vh;
+    display: contents;
+    }
+    .second-page .box {
+    padding: 20px;
+    }
+    .idea-photo {
+        display: none;
+    }
+    .gro ,.container.portfolio {
+            grid-template-columns: repeat(1,minmax(30px,1fr));
+    }
+    .container.about {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    .back-header {
+        height: 54vw;
+        padding-top: 60px;
+    }
+
+
+}
+
+
+
+
+
+/* Medium Screens */
+
+@media (min-width: 768px )and ( max-width:992px){
+    .second-page .box p {
+        padding: 4px 28px;
+    }
+    .second-page .box h3 {
+        font-size: large;
+    } 
+    .gro {
+        grid-template-columns: repeat(2,minmax(30px,1fr));
+    }
+    .idea-photo {
+        display: none;
+    }
+    .container.portfolio {
+        grid-template-columns: repeat(1,minmax(300px,1fr));
+    }
+    .img1 {
+        height: 350px;
+}
+.back-header{
+    padding-top: 100px;
+}
+
+}
+
+
+
+
+/*  */
+ /* Small Screens.  */
+
+@media (min-width: 768px ) {
+    .container {
+        width: 750px;
+    }
+    .header {
+        max-width: auto;
+        margin: 0.2%;
+        padding: 5px;
+    }
+    
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    .header {
+        max-width: auto;
+        margin: 0.2%;
+        padding: 5px;
+    }
+
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170;
+    }
+    .header {
+        max-width: auto;
+        margin: 0.2%;
+        padding: 5px;
+    }
+    /* .back-header {
+        height: 24vw;
+} } */
+}
