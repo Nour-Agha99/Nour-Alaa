@@ -132,7 +132,7 @@ header span ul li:last-child a {
     margin: 3px 44px;
     background-color: var(--thd);
     padding-top: 1px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
  .box h3 {
     color: var(--zer);
